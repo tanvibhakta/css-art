@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal</title>
+</head>
+<body>
+
+    <div class="crystal">
+    <div class="group a">
+        <div class="prong stub"></div>
+    </div>
+    <div class="group b">
+        <div class="prong a"></div>
+        <div class="prong b"></div>
+        <div class="prong behind"></div>
+        <div class="prong main"></div>
+        <div class="prong c"></div>
+        <div class="bottom prong"></div>
+    </div>
+</div>
+
+    <style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+    }
+
+    .white {
+        background-color: #bdfafe;
+    }
+
+    .green1 {
+        background-color: #8bf7fc;
+    }
+
+    .green2 {
+        background-color: #70dbcd;
+    }
+
+    .green3 {
+        background-color: #70d9cc;
+    }
+
+    .green4 {
+        background-color: #55b280;
+    }
+
+    .green5 {
+        background-color: #47919e;
+    }
+
+    .crystal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .group.b {
+        position: relative;
+        border: 2px solid;
+    }
+
+    .prong.a {
+        /*   background-color: #70dbcd; */
+        background-color: red;
+        width: 2.75rem;
+        height: 0.4rem;
+        transform: rotate(-80deg);
+        position: absolute;
+        /*   top: 50%; */
+        left: 0;
+        z-index: 10;
+    }
+
+    .prong.b {
+        background-color: #70dbcd;
+        width: 7rem;
+        height: 1.3rem;
+        transform: rotate(-70deg);
+
+    }
+
+    .prong.behind {
+        background-color: #70dbcd;
+        width: 4rem;
+        height: 1.2rem;
+        transform: rotate(-65deg);
+
+    }
+
+    .prong.main {
+        background-color: #70dbcd;
+        width: 9rem;
+        height: 1.8rem;
+        transform: rotate(-30deg);
+    }
+
+    .prong.c {
+        background-color: #70dbcd;
+        width: 7rem;
+        height: 1.1rem;
+        transform: rotate(-30deg);
+
+    }
+
+    .prong.bottom {
+        background-color: #70dbcd;
+        width: 6rem;
+        height: 1.2rem;
+
+    }
+
+    .prong.stub {
+        background-color: #47919e;
+        width: 1.5rem;
+        height: 2.1rem;
+    }
+</style>
+</body>
+</html>
